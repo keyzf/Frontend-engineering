@@ -1,1 +1,3 @@
-export default 100;
+export default function fn(){
+    console.log(111);
+};

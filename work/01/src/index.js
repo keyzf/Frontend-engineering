@@ -8,3 +8,5 @@ let img = new Image();
 img.src = image;
 
 document.body.appendChild(img);
+
+document.onclick = fn;
