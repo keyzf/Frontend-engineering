@@ -1,6 +1,6 @@
 {
   "name": "gulp-fast-pages",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "gulp static web app workflow",
   "keywords": [
     "gulp-fast-pages",
@@ -17,7 +17,7 @@
     "bin"
   ],
   "main": "lib/index.js",
-  "bin": "bin/zce-pages.js",
+  "bin": "bin/gulp-fast-pages.js",
   "directories": {
     "lib": "lib"
   },
