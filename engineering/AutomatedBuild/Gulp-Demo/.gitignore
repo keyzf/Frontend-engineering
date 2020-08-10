@@ -116,3 +116,5 @@ dist
 temp
 .tmp
 release
+yarn.lock
+yarn-error.log
