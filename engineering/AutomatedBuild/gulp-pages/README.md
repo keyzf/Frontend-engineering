@@ -1,4 +1,4 @@
-# zce-pages
+# gulp-fast-pages
 
 [![NPM Downloads][downloads-image]][downloads-url]
 [![NPM Version][version-image]][version-url]
@@ -12,10 +12,10 @@
 ## Installation
 
 ```shell
-$ yarn add zce-pages
+$ yarn add gulp-fast-pages
 
 # or npm
-$ npm install zce-pages
+$ npm install gulp-fast-pages
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ $ npm install zce-pages
 <!-- TODO: Introduction of API use -->
 
 ```javascript
-const zcePages = require('zce-pages')
+const zcePages = require('gulp-fast-pages')
 const result = zcePages('zce')
 // result => 'zce@zce.me'
 ```
