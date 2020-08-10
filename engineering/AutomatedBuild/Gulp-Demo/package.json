@@ -4,16 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "clean": "gulp clean",
-    "build": "gulp build",
-    "develop": "gulp develop"
-  },
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-cli": "^2.3.0"
+    "clean": "gulp-fast-pages clean",
+    "build": "gulp-fast-pages build",
+    "develop": "gulp-fast-pages develop"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "gulp-fast-pages": "^1.0.2",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
