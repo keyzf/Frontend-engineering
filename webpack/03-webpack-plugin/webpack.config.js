@@ -30,28 +30,28 @@ module.exports = {
                     }
                 }
             },
-            {
-                test: /.html$/,
-                use: {
-                    loader: 'html-loader',
-                    options: {
-                        attribute: {
-                            list: [
-                                {
-                                    tag: 'img',
-                                    attribute: 'src',
-                                    type: 'src'
-                                },
-                                {
-                                    tag: 'a',
-                                    attribute: 'href',
-                                    type: 'src'
-                                }
-                            ]
-                        }
-                    }
-                }
-            },
+            // {
+            //     test: /.html$/,
+            //     use: {
+            //         loader: 'html-loader',
+            //         options: {
+            //             attribute: {
+            //                 list: [
+            //                     {
+            //                         tag: 'img',
+            //                         attribute: 'src',
+            //                         type: 'src'
+            //                     },
+            //                     {
+            //                         tag: 'a',
+            //                         attribute: 'href',
+            //                         type: 'src'
+            //                     }
+            //                 ]
+            //             }
+            //         }
+            //     }
+            // },
             {
                 test: /.js$/,
                 //exclude 表示哪些目录的.js文件不要进行babel-loader
@@ -68,11 +68,24 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
+        // 如果存在html-loader 配置会发生错误？？ why为什么呢？
         new HtmlWebpackPlugin({
             title:'Webpack plugins sample',
             meta:{
                 viewport: 'width=device-width'
-            }
+            },
+            //设置一个模板去加载
+            template:'./src/template.html'
+        }),
+        //输出多个页面文件 about
+        new HtmlWebpackPlugin({
+            filename:"about.html",//默认是index.html
+            title:'Webpack plugins sample',
+            meta:{
+                viewport: 'width=device-width'
+            },
+            //设置一个模板去加载
+            template:'./src/template.html'
         }),
     ]
 };
