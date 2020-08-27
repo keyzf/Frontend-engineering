@@ -29,10 +29,10 @@ module.exports={
                     'css-loader' //
                 ],//该文件使用的加载器  yarn add style-loader --dev  
             },
-            // {
-            //     test:/.jpg$/,
-            //     use:['file-loader'] //文件资源加载器
-            // },
+            {
+                test:/.jpg$/,
+                use:['file-loader'] //文件资源加载器
+            },
             {
                 //Data url 的方式表示文件
                 test:/.jpg$/,

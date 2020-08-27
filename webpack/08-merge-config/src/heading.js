@@ -1,8 +1,8 @@
 import './heading.css'
 
-console.log(123);
-
 export default () => {
+  console.log('Heading~')
+
   const element = document.createElement('h2')
 
   element.textContent = 'Hello world'
