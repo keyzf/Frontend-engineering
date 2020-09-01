@@ -1,7 +1,7 @@
 const marked = require('marked');
 
 module.exports = source => {
-    // console.log(source);
+    console.log('??',source);
     //只能返回一个 javascript代码 / 下一个loader处理 other-loader
     // return 'console.log("hello ~")'
     const html = marked(source);
